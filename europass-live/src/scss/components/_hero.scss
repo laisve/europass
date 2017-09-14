@@ -1,0 +1,83 @@
+.hero {
+  text-align: center;
+  padding-top: 153px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+  .buttons {
+    margin-top: 30px;
+
+    .scroll {
+      @media screen and (max-width: 768px) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 64px;
+    font-family: "Gilroy-Regular";
+    color: #fff;
+    margin: 0;
+
+    span {
+      color: #ffd25a;
+      font-family: "Gilroy-Semibold";
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Gilroy-Medium";
+    color: #fff;
+    margin: 24px 0 0 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+      line-height: 18px;
+    }
+  }
+
+  .icon-scroll {
+    position: absolute;
+    font-size: 45px;
+    bottom: 75px;
+    display: block;
+    width: 80px;
+    left: 50%;
+    margin-left: -40px;
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 33px;
+    }
+
+    @media screen and (max-height: 665px) {
+      display: none;
+    }
+  }
+
+/*  @media screen and (orientation:landscape) and (max-width: 768px) and (max-height: 568px){
+    height: 150vh;
+  }*/
+
+  @media screen and (max-width: 768px) {
+    padding-top: 99px;
+    margin-top: -99px;
+  }
+
+  @media screen and (max-height: 510px) {
+    height: auto;
+  }
+}
